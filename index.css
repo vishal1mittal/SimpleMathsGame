@@ -1,0 +1,32 @@
+.timer_text{
+    margin-left: 2%;
+}
+.score_text{
+    float: right;
+    margin-right: 4%;
+}
+
+.MidContainer {
+    margin-top: 20vh;
+    margin-left: 45%;
+}
+
+.QuestionNumberText{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.QuestionText{
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.Answer{
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    background-color: blue;
+}
