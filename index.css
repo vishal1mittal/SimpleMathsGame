@@ -1,3 +1,14 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .timer_text{
     margin-left: 2%;
 }
@@ -8,7 +19,7 @@
 
 .MidContainer {
     margin-top: 20vh;
-    margin-left: 45%;
+    margin-left: 44%;
 }
 
 .QuestionNumberText{
@@ -20,13 +31,45 @@
 .QuestionText{
     padding: 0;
     margin: 0;
+    margin-left: 5px;
     font-size: 50px;
     font-weight: 900;
 }
 
-.Answer{
+.Answer {
+    margin-top: 10px;
     border-radius: 1em;
-    border: none;
-    outline: none;
-    background-color: blue;
+    height: 25px;
+    width: 21%;
+    box-shadow: 0 0 5px rgb(80, 96, 241);
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 20px;
+    color: gray;
 }
+
+.button {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Change to your desired background color */
+    color: #fff; /* Text color */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.button:hover {
+    background-color: #0056b3; /* Change to a slightly darker color on hover */
+}
+
+/* Additional Styles (Optional) */
+.button:focus {
+    outline: none; /* Remove the default focus outline */
+}
+

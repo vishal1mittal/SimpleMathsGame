@@ -19,10 +19,15 @@
                 <p class="QuestionText">11 X 12</p>
             </div>
             <div class="answer_box">
-                <input class="Answer">
+                <input class="Answer" type="number" autofocus>
             </div>
             <div class="Info_label">
-
+                <button type="button" class="button" onclick="updateQuestion(document.querySelector('.Answer').value)">Submit</button>
+                <button type="button" class="button">Finish</button>
+            </div>
+            <div class="Info_label">
+                <p>Press Enter to Submit</p>
+                <p>Press Esc to Exit</p>
             </div>
         </div>
     </div>

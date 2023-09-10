@@ -3,6 +3,9 @@ var min = 0;
 var sec = 0;
 var score = 0;
 var questionNumber = 0;
+var operators = ["+", "-", "X", "/"];
+var AllQuestions = [];
+var AllAnswer = [];
 
 function updateClock() {
     updateScoreCard();
@@ -36,6 +39,23 @@ function updateScoreCard() {
 function updateQuestionNumber() {
     questionNumber = questionNumber + 1;
     document.querySelector(".QuestionNumberText").innerHTML = ("Question " + questionNumber);    
+}
+
+function updateQuestion(answer){
+    if(answer === ""){
+        alert("Please enter an answer");
+        return;
+    }
+    var num1 = Math.floor(Math.random() * 100);
+    var num2 = Math.floor(Math.random() * 100);
+    var operator = operators[Math.floor(Math.random() * operators.length)];
+
+    if (num2 == 0 && operator == "/") {
+        updateQuestion();
+        return;
+    }
+    
+    document.querySelector(".QuestionText").innerHTML = (num1 + " " + operator + " " + num2);
 }
 
 setInterval(updateClock, 1000);
