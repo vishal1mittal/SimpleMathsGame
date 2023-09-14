@@ -73,3 +73,45 @@ input[type=number] {
     outline: none; /* Remove the default focus outline */
 }
 
+.hidden{
+    display: none;
+}
+
+.Result{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 20px rgba(41, 88, 241, 0.7);
+    padding: 10px;
+}
+
+.Question{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.Answers{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.CorrectAnswer{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 19px;
+}
+
+.Time{
+    margin: 5px 0px;
+    font-size: 19px;
+}
+
+.red{
+    color: red;
+}
+
+#score{
+    font-size: 20px;
+    font-weight: 900;
+}

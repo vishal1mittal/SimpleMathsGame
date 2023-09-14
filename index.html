@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
     <div class="container">
         <div class="TopContainer">
                 <span class="timer_text">00:00:00</span>
@@ -22,14 +21,18 @@
                 <input class="Answer" type="number" autofocus>
             </div>
             <div class="Info_label">
-                <button type="button" class="button" onclick="updateQuestion(document.querySelector('.Answer').value)">Submit</button>
-                <button type="button" class="button">Finish</button>
+                <button type="button" class="button" id="submit" onclick="CheckAnswer(document.querySelector('.Answer').value)">Submit</button>
+                <button type="button" class="button" onclick="finishPractice()">Finish</button>
             </div>
             <div class="Info_label">
                 <p>Press Enter to Submit</p>
                 <p>Press Esc to Exit</p>
             </div>
         </div>
+    </div>
+    <span class="score hidden" id="score"></span>
+    <div class="Result hidden">
+        
     </div>
 </body>
 
